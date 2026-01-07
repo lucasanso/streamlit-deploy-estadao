@@ -9,8 +9,8 @@ from datetime import datetime
 import pytz                                   # Python timezone
 import pandas as pd                          # Tratar e viabilizar armazenamento dos dados 
 import re                                     # Regular Expressions para a validação de cada uma das notícias
-from .keywords import KEYWORDS
-from .keywords import VALIDATION_KEYWORDS
+from keywords import KEYWORDS
+from keywords import VALIDATION_KEYWORDS
 from unidecode import unidecode               # Para formatar cada texto de cada notícia para tornar mais preciso o uso de RE
 import os                                     # Para verificar existência de arquivo
 
