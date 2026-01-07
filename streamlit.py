@@ -6,7 +6,7 @@ st.set_page_config(page_title="Monitor Estadão", layout="wide")
 @st.cache_data
 def load_data():
     # Carrega o arquivo (certifique-se de que o nome está correto)
-    df = pd.read_csv("data/accepted_news.csv")
+    df = pd.read_csv("accepted_news.csv")
     # Limpa espaços vazios nos nomes das colunas por segurança
     df.columns = df.columns.str.strip()
     return df
